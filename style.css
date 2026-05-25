@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 h1{
     color: #5c4033;
-    font-size: 32px;
+    font-size: 26px;
+}
+
+#subtitulo-menu{
+    font-size: 15px;
 }
 
 h2{
@@ -21,19 +26,39 @@ p{
 }
 
 body {
+    width: 99.8%;
     background-color: #fff8f3;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
-nav{
+header{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    border: 3px solid #5c4033 ;
+    margin: 1px;
+
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F2EBDB;
+    color: #5c4033;
+
+    li{
+        display: inline;
+        padding: 20px;
+    }
 }
 
 main{
-    padding: 80px 20px;
+
+    padding: 20px 20px;
 }
 
 section{
@@ -53,7 +78,9 @@ section{
     flex: 1;
 }
 
-.hero-image{
+.hero img{
+    display: block;
+    height: 100%;
     width: 100%;
     border-radius: 16px;
 }
