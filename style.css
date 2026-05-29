@@ -57,12 +57,28 @@ nav{
     color: #5c4033;
 }
 
-.logo {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
     display: inline-flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding-left: 45px;
+    padding-left: 35px;
+}
+
+.img-logo {
+    height: 55px;
+    padding-left: 20px;
 }
 
 .nav-links {
@@ -158,4 +174,28 @@ section{
     position: relative;
     justify-content: end;
     margin-right: 50px;
+}
+
+.produtos {
+    margin: 40px;
+}
+
+
+.produtos-mural {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.produto-item {
+  padding: 0px 10px;
+  flex: 0 0 400px;
+  height: 350px;
+  border: #5c4033 solid 1px;
+  border-radius: 10px;
+}
+
+.produto-item img {
+  width: 100%;
 }
