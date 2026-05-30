@@ -199,3 +199,22 @@ section{
 .produto-item img {
   width: 100%;
 }
+
+.redes-sociais {
+    justify-content: center;
+}
+
+.link-rede {
+    display: flex;
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    align-items: center;
+}
+
+.link-rede img {
+    width: 50px;
+}
+
+
+
