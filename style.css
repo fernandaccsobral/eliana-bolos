@@ -81,14 +81,11 @@ nav{
     padding-left: 20px;
 }
 
-.nav-links {
-    display: none;
-}
-
 .nav-links ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    padding-right: 40px ;
 }
 
 nav li{
@@ -164,18 +161,6 @@ section{
 }
 
 
-.menu-button {
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: #5c4033;
-    padding: 10px 10px;
-    margin-left: 20px;
-    position: relative;
-    justify-content: end;
-    margin-right: 50px;
-}
-
 .produtos {
     margin: 40px;
 }
@@ -209,8 +194,8 @@ section{
 
 .sobre img {
     display: block;
-    width: 35%;
-    aspect-ratio: 1/1;
+    width: 400px;
+    justify-self: center;
     padding: 0px 40px 0px 0px;
     border-radius: 16px;
 }
