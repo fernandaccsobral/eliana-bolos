@@ -1,3 +1,5 @@
+/* ============= Elementos Básicos ============== */
+
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +38,8 @@ body {
     text-align: center;
 }
 
+/* ============= Parte Superior ================= */
+
 #subtitulo-menu{
     font-size: 15px;
 }
@@ -69,7 +73,10 @@ nav{
 }
 
 .logo-text {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +101,7 @@ nav li{
 }
 
 
-button {
+button, .btn {
   background-color: #8b4513;
   color: white;
   border: none;
@@ -104,9 +111,9 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.btn,button:hover {
     background-color: #6f3410;
-    transform: scale(1.05s);
+    transform: scale(1.05);
 }
 
 .overlay {
@@ -119,6 +126,8 @@ button:hover {
 
     transition: 0.3s;
 }
+
+/* ============== Hero section ============== */
 
 main{
     width: 100%;
@@ -160,6 +169,7 @@ section{
     border-radius: 16px;
 }
 
+/* ============== Home Produtos ================= */
 
 .produtos {
     margin: 40px;
@@ -177,13 +187,74 @@ section{
   padding: 0px 10px;
   flex: 0 0 400px;
   height: 350px;
-  border: #5c4033 solid 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #F2EBDB;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: #5c4033 solid 2px;
   border-radius: 10px;
+  position: relative;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
 }
 
 .produto-item img {
-  width: 100%;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
 }
+
+.produto{
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    margin-top: 10px;
+    padding: 40px;
+    background-color: #f3d3a2;
+    border-radius: 20px;
+    border: 3px solid #8b4513;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.produto h3{
+    text-align: center;
+    font-size: 2.8rem;
+    color: #5c4033;
+    margin-bottom: 10px;
+}
+
+.produto-item.ativo{
+    border: 4px solid #8b4513;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.produto-item.ativo::after{
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -20px;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-top: 20px solid #8b4513;
+}
+
+.inativo {
+    display: none;
+}
+
+/* ============= Home Sobre ============== */
 
 .sobre {
     display: flex;
@@ -209,6 +280,186 @@ section{
     padding: 25px;
 }
 
+/* =============== PÁGINA PRODUTOS ==================== */
+
+.produto{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px 20px;
+}
+
+.produto h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #5c4033;
+}
+
+.produto h4{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 40px 0 20px;
+    color: #5c4033;
+}
+
+.preco{
+    width: fit-content;
+    margin: 0 auto 40px;
+    padding: 12px 24px;
+    background-color: #8b4513;
+    color: white;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.produtos-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0 0 40px 0;
+}
+
+.produtos-li{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2EBDB;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.produtos-li:hover{
+    transform: translateY(-8px);
+}
+
+.produtos-li img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.produtos-li p{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #5c4033;
+}
+
+#faca-encomenda-btn{
+    width: fit-content;
+    margin: 0 auto 40px;
+    padding: 12px 24px;
+    background-color: #8b4513;
+    color: white ;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+#faca-encomenda-btn:hover {
+    background-color: #6f3410;
+    transform: translateY(-8px);
+}
+
+/* ============== Sobre ================ */
+
+.sobre-completo{
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.sobre-completo img{
+    width: 350px;
+
+    border-radius: 20px;
+}
+
+.sobre-completo-texto{
+    text-align: left;
+}
+
+.sobre-completo-texto p{
+    margin-bottom: 20px;
+
+    line-height: 1.7;
+}
+
+/* =============== Contato ================ */
+
+.contato{
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+.contato-descricao{
+    margin-bottom: 40px;
+}
+
+.contato-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+.contato-card{
+    background-color: #F2EBDB;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: #5c4033;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contato-card:hover{
+    transform: translateY(-5px);
+}
+
+.contato-card img{
+    width: 70px;
+
+    margin-bottom: 15px;
+}
+
+.contato-card h3{
+    margin-bottom: 10px;
+}
+
+
+
+/* ============== Footer =============== */
+
 footer {
     display: flex;
     gap: 50px;
@@ -228,7 +479,8 @@ footer {
 
 .link-rede {
     display: flex;
-    aspect-ratio: 1/1;
+    align-items: center;
+    gap: 8px;
     margin: 10px;
     align-items: center;
 }

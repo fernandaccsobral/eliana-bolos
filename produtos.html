@@ -9,6 +9,8 @@
 <body>
     <header>
         <nav class="navbar">
+
+
             <div class="header-left">
                 <img class="img-logo" src="/assets/imagens/logo-invertida.png">
                 <div class="logo-text">
@@ -18,11 +20,13 @@
                     </a>
                 </div>
             </div>
+
             <div class="nav-links">
+
                 <ul>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="/produtos.html">Produtos</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
                 </ul>
 
             </div>
@@ -36,25 +40,114 @@
         <div class="produtos">
             <h2>Produtos</h2>
             <div class="produtos-mural">
-                <div class="produto-item">
+                <div class="produto-item ativo" data-produto="bolo">
                     <p>Bolos</p>
                     <img src="/assets/imagens/bolo.jpg">
                 </div>
-                <div class="produto-item">
+                <div class="produto-item" data-produto="pudim">
                     <p>Pudim</p>
                     <img src="/assets/imagens/pudim.jpg">
                 </div>
-                <div class="produto-item">
+                <div class="produto-item" data-produto="ovo">
                     <p>Ovos de Páscoa</p>
                     <img src="/assets/imagens/ovo-pascoa.jpg">
                 </div>
             </div>
         </div>
-            
+
+        
+        <div class="produto" id="bolo">
+
+            <h3>Bolos</h3>
+
+            <div class="preco">
+                R$ 75,00 / Kg
+            </div>
+
+            <h4>Bolos Doces</h4>
+
+            <ul class="produtos-ul">
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/Bolo-aniversario.jpg" alt="Bolo de Chocolate">
+                        <p>Bolo de Chocolate</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/bolo-ninho-morango.png" alt="Bolo Ninho com Morango">
+                        <p>Bolo Ninho com Morango</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h4>Bolos Salgados</h4>
+
+            <ul class="produtos-ul">
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/Bolo-salgado.jpg" alt="Bolo Salgado de Frango">
+                        <p>Bolo Salgado de Frango</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/Bolo-pao-queijo.jpg" alt="Bolo de Pão de Queijo">
+                        <p>Bolo de Pão de Queijo</p>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5511963401488" id="faca-encomenda-btn">
+               Faça sua encomenda
+            </a>
+
+        </div>    
+         <div class="produto inativo" id="pudim">
+
+            <h3>Pudim</h3>
+
+            <div class="preco">
+                R$ 75,00 / Kg
+            </div>
+
+            <h4></h4>
+
+            <ul class="produtos-ul">
+                
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/pudim-1kgs .jpg" alt="Bolo Ninho com Morango">
+                        <p>Pudim 1kgs</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="produtos-li">
+                        <img src="/assets/imagens/pudim-4kg.jpg" alt="Bolo de Chocolate">
+                        <p>Até Pudim 4kgs</p>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5511963401488" id="faca-encomenda-btn">
+               Faça sua encomenda
+            </a>
+        </div>  
+
+        <div class="produto inativo" id="ovo">
+
+            <h3>Ovos de Páscoa</h3>
+
+            <h3>Em breve</h3>
 
 
-        </div>
+        </div>  
+
     </main>
+
+
     <footer>
         <div class="header-left">
                 <div class="logo-text">
@@ -69,24 +162,21 @@
                 <p>Nos acompanhe:</p>
                 <div class="link-rede">
                     <img src="/assets/icons/insta.png">
-                    <a href="">Instagram</a>
+                    <a href="https://www.instagram.com/elianajailton?igsh=ZmxlNzIwdDFndnB1">Instagram</a>
                 </div>
                 <p>|</p>
                 <div class="link-rede">
                     <img src="/assets/icons/whatsapp.png">
-                    <a href="">Whatsapp</a>
+                    <a href="https://wa.me/5511963401488">Whatsapp</a>
                 </div>
                 <p>|</p>
                 <div class="link-rede">
                     <img src="/assets/icons/facebook.png">
-                    <a href="">Facebook</a>
+                    <a href="https://www.facebook.com/share/1GC1g5iLDi/">Facebook</a>
                 </div>
             </div>
 
         </div>
-
-
-
     </div>   
     </footer>
     <script src="script.js"></script>
