@@ -88,16 +88,9 @@ nav{
     padding-left: 20px;
 }
 
-.nav-links{
-    width: 70%;
-    display: flex;
-    align-items: end;
-}
-
 .nav-links ul {
     display: flex;
-    justify-content: end;
-    width: 100%;
+    align-items: end;
     gap: 20px;
     list-style: none;
     padding-right: 40px ;
@@ -497,139 +490,6 @@ footer {
     height: 50px;
     aspect-ratio: 1/1;
 }
-
-
-/* ==============RESPOSIVIDADE===================*/
-
-@media (max-width: 768px){
-
-    .navbar{
-        flex-direction: column;
-
-        height: auto;
-
-        padding: 15px;
-    }
-
-    #subtitulo-menu{
-        display: none;
-    }
-
-    .logo-text{
-
-        padding-left: 0;
-
-        flex-direction: column;
-    }
-
-    #h1-menu{
-        font-size: 20px;
-    }
-
-    .nav-links ul{
-        padding-right: 0;
-
-        margin-top: 15px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-
-    .hero{
-        flex-direction: column;
-
-        gap: 20px;
-
-        padding: 30px 20px;
-
-        height: auto;
-    }
-
-    .hero-text{
-        width: 100%;
-    }
-
-    .hero img{
-        width: 100%;
-
-        height: auto;
-
-        padding: 0;
-    }
-
-    .produtos-mural{
-        display: block;
-    }
-
-    .produto-item{
-        margin: 10px;
-    }
-
-    /* ========== HOME SOBRE ============= */
-
-    .sobre{
-        padding: 30px 0 30px 0;
-    }
-
-    .sobre img{
-        height: 300px;
-        width: 250px;
-        padding: 0;
-    }
-
-    .sobre-text{
-        padding-bottom: 20px;
-    }
-    
-    #sobrep2{
-        display: none;
-    }
-
-    #sobrebtn {
-        margin: 20px;
-    }
-
-    /* ======== FOOTER ============*/
-
-     .link-rede {
-        display: block;
-     }   
-
-     #nos-acompanhe-p{
-        display: none;
-     }
-
-
-     /*============ PAGINAs =================*/
-
-
-     #logo-sobre{
-        display: none;
-     }
-
-     .produtos{
-        display: block;
-     }
-
-     #footer-contato{
-        display: none;
-     }
-    
-
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
